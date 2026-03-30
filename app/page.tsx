@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { sdk } from "@farcaster/miniapp-sdk";
+import { sdk } from "@/lib/farcaster-sdk";
 import GhostPokeApp from "@/components/GhostPokeApp";
 
 export type FarcasterUser = {

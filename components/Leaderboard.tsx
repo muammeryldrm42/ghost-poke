@@ -49,7 +49,7 @@ export default function Leaderboard({
           }`}
         >
           <Zap size={14} />
-          En Çok Dürten
+          Top Pokers
         </button>
         <button
           onClick={() => setTab("received")}
@@ -60,7 +60,7 @@ export default function Leaderboard({
           }`}
         >
           <Target size={14} />
-          En Çok Dürtülen
+          Most Poked
         </button>
       </div>
 
@@ -73,10 +73,10 @@ export default function Leaderboard({
         <div className="text-center py-12">
           <div className="text-4xl mb-3 opacity-30">🏆</div>
           <p className="text-ghost-muted text-sm font-display">
-            Henüz kimse poke atmamış
+            No pokes yet
           </p>
           <p className="text-ghost-border text-xs font-mono mt-1">
-            İlk sen ol!
+            Be the first one!
           </p>
         </div>
       ) : (

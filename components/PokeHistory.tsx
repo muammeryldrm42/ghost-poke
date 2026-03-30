@@ -15,12 +15,12 @@ type PokeRecord = {
 function timeAgo(ts: number): string {
   const diff = Date.now() - ts;
   const mins = Math.floor(diff / 60000);
-  if (mins < 1) return "şimdi";
-  if (mins < 60) return `${mins}dk`;
+  if (mins < 1) return "now";
+  if (mins < 60) return `${mins}m`;
   const hours = Math.floor(mins / 60);
-  if (hours < 24) return `${hours}sa`;
+  if (hours < 24) return `${hours}h`;
   const days = Math.floor(hours / 24);
-  return `${days}g`;
+  return `${days}d`;
 }
 
 export default function PokeHistory({
@@ -60,8 +60,8 @@ export default function PokeHistory({
       <div className="flex items-center gap-3 mb-2">
         <Inbox size={20} className="text-ghost-accent" />
         <h2 className="text-lg font-bold font-display">
-          <span className="text-ghost-accent">Beni</span>{" "}
-          <span className="text-ghost-text">Kim Dürttü?</span>
+          <span className="text-ghost-accent">Who</span>{" "}
+          <span className="text-ghost-text">Poked Me?</span>
         </h2>
       </div>
 
@@ -73,10 +73,10 @@ export default function PokeHistory({
         <div className="text-center py-12">
           <div className="text-4xl mb-3 opacity-30">📭</div>
           <p className="text-ghost-muted text-sm font-display">
-            Henüz kimse seni dürtememiş
+            No one has poked you yet
           </p>
           <p className="text-ghost-border text-xs font-mono mt-1">
-            Ghost Poke&apos;u paylaşarak başla!
+            Share Ghost Poke to get started!
           </p>
         </div>
       ) : (
@@ -98,7 +98,7 @@ export default function PokeHistory({
               >
                 <p className="text-sm font-medium text-ghost-text font-display truncate">
                   <span className="text-ghost-neon">@{poke.pokerUsername}</span>{" "}
-                  seni dürttü!
+                  poked you!
                 </p>
                 <p className="text-[10px] text-ghost-muted font-mono flex items-center gap-1 mt-0.5">
                   <Clock size={10} />
@@ -114,7 +114,7 @@ export default function PokeHistory({
                            text-xs font-mono uppercase tracking-wider flex-shrink-0"
               >
                 <Reply size={12} />
-                Karşılık
+                Poke Back
               </button>
             </div>
           ))}
