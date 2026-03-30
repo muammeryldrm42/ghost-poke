@@ -23,7 +23,7 @@ A poke atar → cast feed'e düşer (mini app embed'li)
 ## Tech Stack
 
 - **Next.js 15** (App Router) — Vercel deploy
-- **@farcaster/miniapp-sdk** — Auth, composeCast, haptics
+- **Farcaster Mini App SDK (window.farcaster)** — Auth, composeCast, haptics
 - **Neynar API** — Farcaster kullanıcı arama
 - **Vercel KV** — Poke kayıtları, leaderboard, streak
 - **Tailwind CSS** — Cyberpunk/neon theme
