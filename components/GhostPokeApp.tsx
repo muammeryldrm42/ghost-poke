@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { sdk } from "@farcaster/miniapp-sdk";
+import { sdk } from "@/lib/farcaster-sdk";
 import { Search, Trophy, Inbox, Ghost } from "lucide-react";
 import type { MiniAppContextData } from "@/app/page";
 import SearchBar from "./SearchBar";
