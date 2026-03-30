@@ -73,7 +73,7 @@ export default function GhostPokeApp({
           data.streak > 2 ? ` 🔥 Haunting streak: ${data.streak}x!` : "";
 
         await sdk.actions.composeCast({
-          text: `@${selectedUser.username} seni hayalet gibi dürttü! 👻${streakText}\n\nSen de karşı atak yap:`,
+          text: `@${selectedUser.username} just got ghost-poked! 👻${streakText}\n\nStrike back:`,
           embeds: [appUrl],
         });
       }
@@ -162,10 +162,10 @@ export default function GhostPokeApp({
                   👻
                 </div>
                 <p className="text-ghost-muted text-sm font-display">
-                  Birini ara ve hayalet gibi dürt
+                  Search someone and ghost-poke them
                 </p>
                 <p className="text-ghost-border text-xs font-mono mt-2">
-                  feed&apos;de iz bırak, streak kas
+                  Leave your mark on the feed, build your streak
                 </p>
               </div>
             )}
@@ -193,9 +193,9 @@ export default function GhostPokeApp({
         <div className="max-w-lg mx-auto flex">
           {(
             [
-              { id: "search", icon: Search, label: "Dürt" },
-              { id: "leaderboard", icon: Trophy, label: "Sıralama" },
-              { id: "inbox", icon: Inbox, label: "Gelen" },
+              { id: "search", icon: Search, label: "Poke" },
+              { id: "leaderboard", icon: Trophy, label: "Leaderboard" },
+              { id: "inbox", icon: Inbox, label: "Inbox" },
             ] as const
           ).map(({ id, icon: Icon, label }) => (
             <button

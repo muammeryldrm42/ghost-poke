@@ -5,10 +5,10 @@ const appUrl = process.env.NEXT_PUBLIC_URL || "https://ghost-poke.vercel.app";
 
 export const metadata: Metadata = {
   title: "Ghost Poke 👻",
-  description: "Hayalet gibi dürt, iz bırak — Farcaster Mini App",
+  description: "Ghost-poke your friends and leave your mark — Farcaster Mini App",
   openGraph: {
     title: "Ghost Poke 👻",
-    description: "Hayalet gibi dürt, iz bırak",
+    description: "Ghost-poke your friends and leave your mark",
     images: [`${appUrl}/images/og.png`],
   },
   other: {

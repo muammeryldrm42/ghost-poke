@@ -28,12 +28,12 @@ export default function PokeButton({
           {loading ? (
             <>
               <Loader2 size={22} className="animate-spin" />
-              Dürtülüyor...
+              Poking...
             </>
           ) : blasting ? (
             <>
               <span className="text-2xl">👻</span>
-              Dürtüldü!
+              Poked!
             </>
           ) : (
             <>
@@ -45,7 +45,7 @@ export default function PokeButton({
       </button>
 
       <p className="text-ghost-muted text-xs font-mono text-center">
-        @{targetUsername} feed&apos;ine hayalet bırakacaksın
+        You&apos;re about to haunt @{targetUsername}&apos;s feed
       </p>
     </div>
   );

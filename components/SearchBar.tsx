@@ -64,7 +64,7 @@ export default function SearchBar({
         <input
           ref={inputRef}
           type="text"
-          placeholder="Kullanıcı ara... @vitalik"
+          placeholder="Search users... @vitalik"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setOpen(true)}
@@ -141,7 +141,7 @@ export default function SearchBar({
 
       {open && query.length >= 1 && results.length === 0 && !loading && (
         <div className="absolute z-50 w-full mt-2 bg-ghost-surface border border-ghost-border rounded-2xl p-6 text-center animate-fade-in">
-          <p className="text-ghost-muted text-sm">Kimse bulunamadı 👻</p>
+          <p className="text-ghost-muted text-sm">No users found 👻</p>
         </div>
       )}
     </div>
